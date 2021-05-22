@@ -6,6 +6,8 @@ jobs:
     name: Run EditMode and PlayMode Test
     runs-on: ubuntu-latest
     steps:
+      - name: Check out my unity project.
+        uses: actions/checkout@v2
       - name: Run EditMode and PlayMode Test
         uses: game-ci/unity-test-runner@v2
         env:

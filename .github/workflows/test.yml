@@ -1,0 +1,14 @@
+name: Run EditMode and PlayMode Test
+on:
+  workflow_dispatch: {}
+jobs:
+  test:
+    name: Run EditMode and PlayMode Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run EditMode and PlayMode Test
+        uses: game-ci/unity-test-runner@v2
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}

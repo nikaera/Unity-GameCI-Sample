@@ -13,11 +13,10 @@ jobs:
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
-          targetPlatform: StandaloneOSX
+          targetPlatform: WebGL
           unityVersion: 2020.3.5f1
       - name: Upload the OSX Build
         uses: actions/upload-artifact@v2
         with:
           name: Build
           path: build
-          

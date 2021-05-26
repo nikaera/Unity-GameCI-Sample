@@ -15,6 +15,11 @@ jobs:
         with:
           targetPlatform: WebGL
           unityVersion: 2020.3.5f1
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.3
+        with:
+          branch: gh-pages
+          folder: build
       - name: Upload the WebGL Build
         uses: actions/upload-artifact@v2
         with:

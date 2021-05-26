@@ -1,21 +1,21 @@
-name: Run the OSX build
+name: Run the WebGL build
 on:
   workflow_dispatch: {}
 jobs:
   build:
-    name: Run the OSX build
+    name: Run the WebGL build
     runs-on: ubuntu-latest
     steps:
       - name: Check out my unity project.
         uses: actions/checkout@v2
-      - name: Run the OSX build
+      - name: Run the WebGL build
         uses: game-ci/unity-builder@v2
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           targetPlatform: WebGL
           unityVersion: 2020.3.5f1
-      - name: Upload the OSX Build
+      - name: Upload the WebGL Build
         uses: actions/upload-artifact@v2
         with:
           name: Build

@@ -1,5 +1,6 @@
 # Unity-GameCI-Sample 🎮
-Sample project for building a CI environment for Unity using [GameCI](https://game.ci/) with GitHub Actions.
+Sample project for building a CI environment for Unity using [GameCI](https://game.ci/) with GitHub Actions.  
+You can see the actual execution of GameCI's GitHub Actions from the [Actions tab](https://github.com/nikaera/Unity-GameCI-Sample/actions).
 
 ## 🧪 Samples 
 
@@ -22,7 +23,7 @@ Copy the sample you want to use from [the folder containing the workflow files](
 
 ## 🎁 Contributing
 
-If you have any questions, please feel free to reach out to me directly on Twitter [nikaera](https://twitter.com/n1kaera), or feel free to create an Issue or PR for you.
+If you have any questions, please feel free to create an Issue or PR for you.
 
 ## License
 
